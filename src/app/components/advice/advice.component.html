@@ -1,0 +1,14 @@
+<main>
+    <section class="container">
+        <div class="col-1">
+            <div class="card-advice" *ngIf="!!advice">
+                <h6>Advice # <span>{{advice.slip.id}}</span></h6>
+                <q>{{advice.slip.advice}}</q>
+                <img class="img-divider" src="../../../assets/images/pattern-divider-desktop.svg" alt="Divider">
+                <span class="button-generator" (click)="showAdvice();">
+                    <img src="../../../assets/images/icon-dice.svg" alt="Image dice">
+                </span>
+            </div>
+        </div>
+    </section>
+</main>
