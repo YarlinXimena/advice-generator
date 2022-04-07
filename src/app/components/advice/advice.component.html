@@ -4,7 +4,9 @@
             <div class="card-advice" *ngIf="!!advice">
                 <h6>Advice # <span>{{advice.slip.id}}</span></h6>
                 <q>{{advice.slip.advice}}</q>
-                <img class="img-divider" src="assets/images/pattern-divider-desktop.svg" alt="Divider">
+                <img class="img-divider-desktop" src="assets/images/pattern-divider-desktop.svg" alt="Desktop divider">
+                <img class="img-divider-mobile" src="assets/images/pattern-divider-mobile.svg" alt="Mobile divider">
+                
                 <span class="button-generator" (click)="showAdvice();">
                     <img src="assets/images/icon-dice.svg" alt="Image dice">
                 </span>
